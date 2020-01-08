@@ -1,1 +1,2 @@
-# doorBellCV
+# doorBellCV (Working progress)
+The following is a proof of concept. Currently the CV algorithm detects motion and notifies the server to enable a buzzer. Future plans for this project include implementing a face detection CV algorithm and a wifi enable relay to directly control a door chime.
