@@ -15,10 +15,10 @@ from sklearn.metrics import confusion_matrix
 import itertools
 import matplotlib.pyplot as plt 
 
-train_path = 'barackObama/train'
-valid_path = 'barackObama/valid'
+train_path = 'NameOfPerson/train'
+valid_path = 'NameOfPerson/valid'
 
-train_batches = ImageDataGenerator().flow_from_directory(train_path, target_size=(224, 224), classes=['obama', 'Unknown'], batch_size = 10)
+train_batches = ImageDataGenerator().flow_from_directory(train_path, target_size=(224, 224), classes=['NameOfPerson', 'Unknown'], batch_size = 10)
 
 # imports vgg16 model 
 vgg16_model = keras.applications.vgg16.VGG16()

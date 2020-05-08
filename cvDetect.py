@@ -7,7 +7,7 @@ import serial
 seri = serial.Serial('COM3', 9600)
 
 #Load trained model
-model = load_model('obamaModel.h5')
+model = load_model('model.h5')
 
 model.compile(loss='binary_crossentropy',
               optimizer='rmsprop',
@@ -54,7 +54,7 @@ while(True):
 
 		#Print face data to the screen
 		if(classes == 0):
-			cv2.putText(img,'Barack Obama', 
+			cv2.putText(img,'Name of Person', 
 				bottomLeftCornerOfText, 
 				font, 
 				fontScale,
